@@ -5,8 +5,8 @@
     <classes>
       <class name="mypackage.MyTestCases">
         <methods>
-          <include name="CheckDepatureDate"/>
           <include name="MySetup"/>
+          <include name="RandomlySelect"/>
         </methods>
       </class> <!-- mypackage.MyTestCases -->
     </classes>

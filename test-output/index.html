@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HOME\AppData\Local\Temp\testng-eclipse--1015382498\testng-customsuite.xml</span>
+                    <span>C:\Users\HOME\AppData\Local\Temp\testng-eclipse--716291903\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="mypackage.MyTestCases" class="method navigator-link" hash-for-method="CheckReturnDate">CheckReturnDate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="mypackage.MyTestCases" class="method navigator-link" hash-for-method="ClickFirstCompliteList">ClickFirstCompliteList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="mypackage.MyTestCases" class="method navigator-link" hash-for-method="RandomlySelect">RandomlySelect</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,11 +132,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CheckReturnDate">
-                  </a> <!-- CheckReturnDate -->
-                  <span class="method-name">CheckReturnDate</span>
+                  <a name="ClickFirstCompliteList">
+                  </a> <!-- ClickFirstCompliteList -->
+                  <span class="method-name">ClickFirstCompliteList</span>
                   <em>
-(Check Return Date is Set To day + 2day by defult)                  </em>
+(Switch to hotel search tab if arbic type arabic cities randomly if english type english citeies randomly click first complete list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RandomlySelect">
+                  </a> <!-- RandomlySelect -->
+                  <span class="method-name">RandomlySelect</span>
+                  <em>
+(Randomly select “1 room, 2 adults, 0 children” or “1 room, 1 adult, 0 children” option then click search)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,7 +153,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HOME\AppData\Local\Temp\testng-eclipse--1015382498\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HOME\AppData\Local\Temp\testng-eclipse--716291903\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -188,16 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CheckReturnDate')
+data.setCell(0, 1, 'RandomlySelect')
 data.setCell(0, 2, 'mypackage.MyTestCases')
-data.setCell(0, 3, 112);
+data.setCell(0, 3, 26811);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ClickFirstCompliteList')
+data.setCell(1, 2, 'mypackage.MyTestCases')
+data.setCell(1, 3, 4391);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 112 ms</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -212,7 +230,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -226,7 +244,11 @@ return data;
                 <br/>
                 <span class="ignored-method-name">HotelTapIsNotSelected</span>
                 <br/>
+                <span class="ignored-method-name">RandomlyCheckWebsiteLanguge</span>
+                <br/>
                 <span class="ignored-method-name">CheckTheDefultCurrency</span>
+                <br/>
+                <span class="ignored-method-name">CheckReturnDate</span>
                 <br/>
                 <span class="ignored-method-name">CheckTheDefultLanguge</span>
                 <br/>
@@ -246,8 +268,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">CheckReturnDate</span>
-                <span class="method-start">13061 ms</span>
+                <span class="method-name">ClickFirstCompliteList</span>
+                <span class="method-start">13403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RandomlySelect</span>
+                <span class="method-start">17840 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
